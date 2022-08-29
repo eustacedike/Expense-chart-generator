@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./index.css">
+  <title>Frontend Mentor | Expenses chart component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+<h3 class="BCG">Expense Chart Generator by <a href="https://eustacedike.github.io/eustaced/">Eustace Dike</a></h3>
+  <!-- <img src="./design/desktop-design.jpg" alt=""> -->
+<div class="main">
+  <!-- <h2>Weekly Expense Chart</h2>
+  <p>by<a href="">Eustace Dike</a> -->
+<div>
+  <div class="chart-head">
+    <div class="arth">
+      <p>My balance</p>
+      <h2 id="balance">$x.xx</h2>
+    </div>
+    <div class="artt">
+      <div class="spa1"></div>
+      <div class="spa2"></div>
+    </div>
+  </div>
+
+  <div id="chart-out">
+    <h3>Spending - Last 7 Days</h3>
+    <div id="chart-in" style="border-bottom:1px solid grey;">
+    
+    </div>
+    <div id="dayz">
+      
+      
+    </div>
+    <div class="perc">
+      <div class="tot">
+        <p>Total this week</p>
+        <h2 id="total">$x.xx</h2>
+      </div>
+      <div class="tot">
+        <h4 id="uptick">+x.xx%</h4>
+        <p>from last week</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="refresh">
+    <button onclick="window.location.href='./index.html'">Refresh</button>
+  </div>
+  
+</div>
+
+<div>
+  <form action="" id="bal-form-1" class="bal-form">
+    <input id="bal" type="number" placeholder="Initial Balance" required>
+    <input id="prv" type="number" placeholder="Last Month Total" required>
+    
+    
+    <button id="send-btn" onclick="takeData1()">SUBMIT</button>
+  </form>
+
+  <form action="" id="bal-form-2" class="bal-form">
+    <legend>Daily Expense</legend>
+    <div>
+      <input type="text" value="Mon" id="mon" readonly>
+      <input id="spent-1" type="number" placeholder="$" required>
+    </div>
+    <div>
+      <input type="text" value="Tue" id="tue" readonly>
+      <input id="spent-2" type="number" placeholder="$" required>
+    </div>
+    <div>
+      <input type="text" value="Wed" id="wed" readonly>
+      <input id="spent-3" type="number" placeholder="$" required>
+    </div>
+    <div>
+      <input type="text" value="Thur" id="thur" readonly>
+      <input id="spent-4" type="number" placeholder="$" required>
+    </div>
+    <div>
+      <input type="text" value="Fri" id="fri" readonly>
+      <input id="spent-5" type="number" placeholder="$" required>
+    </div>
+    <div>
+      <input type="text" value="Sat" id="sat" readonly>
+      <input id="spent-6" type="number" placeholder="$" required>
+    </div>
+    <div>
+      <input type="text" value="Sun" id="sun" readonly>
+      <input id="spent-7" type="number" placeholder="$" required>
+    </div>
+    <!-- <select id="new-day">
+      <option value="mon">Monday</option>
+      <option value="tue">Tuesday</option>
+      <option value="wed">Wednesday</option>
+      <option value="thur">Thursday</option>
+      <option value="fri">Friday</option>
+      <option value="sat">Saturday</option>
+      <option value="sun">Sunday</option>
+    </select> -->
+    <!-- <input id="spent" type="number" placeholder="spent" required> -->
+    
+    
+    <button id="send-btn" onclick="takeData2()">SUBMIT</button>
+  </form>
+
+  <!-- <form action="" id="bal-form">
+    <input id="bal" type="number" placeholder="Initial Balance" required>
+    <select id="new-day">
+      <option value="mon">Monday</option>
+      <option value="tue">Tuesday</option>
+      <option value="wed">Wednesday</option>
+      <option value="thur">Thursday</option>
+      <option value="fri">Friday</option>
+      <option value="sat">Saturday</option>
+      <option value="sun">Sunday</option>
+    </select>
+    <input id="spent" type="number" placeholder="spent" required>
+    
+    
+    <button id="send-btn" onclick="takeData()">SUBMIT</button>
+  </form> -->
+</div>
+</div>
+  
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+<!-- <marquee behavior="scroll" scrollamount="10" direction="left" width="100%" height="100px" style="font-size: 30px;">EUSTACE</marquee> -->
+
+  <script src="./app.js"></script>
+</body>
+</html>
